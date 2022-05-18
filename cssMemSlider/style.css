@@ -1,0 +1,130 @@
+body {
+    overflow: hidden;
+}
+
+.content {
+    background-color: rgb(37, 40, 42);
+    width: 800px;
+    margin: 50px auto;
+    border: 10px solid black;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.sliderRadio {
+    display: none;
+}
+
+.sliderContent {
+    width: 400%;
+    display: flex;
+    align-items: center;
+
+}
+
+.sliderImg {
+    width: 400%;
+    transition: 1s;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.sliderImg img {
+    border-radius: 20px;
+    width: 100%;
+    height: 600px;
+}
+
+.sliderFooter {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.sliderText {
+    display: flex;
+    overflow: hidden;
+}
+
+.sliderTextContent {
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%;
+    transition: 1s;
+    flex-shrink: 0;
+
+}
+
+.sliderControl {
+    display: flex;
+}
+
+.sliderButton {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: rgb(114, 175, 228);
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.sliderControlElem {
+    height: 16px;
+    width: 32px;
+    display: flex;
+    cursor: pointer;
+}
+
+.sliderControlElem:hover .slider_button {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sliderControlElem:active .slider_button {
+    box-shadow: inset 0 0 0.1rem rgb(100, 83, 83);
+}
+
+input#radio1:checked~.sliderFooter .sliderControl>label[for="radio1"] .sliderButton,
+input#radio2:checked~.sliderFooter .sliderControl>label[for="radio2"] .sliderButton,
+input#radio3:checked~.sliderFooter .sliderControl>label[for="radio3"] .sliderButton,
+input#radio4:checked~.sliderFooter .sliderControl>label[for="radio4"] .sliderButton {
+    background-color: rgb(37, 40, 42);
+}
+
+input#radio1:checked~.sliderContent .sliderImg {
+    transform: translateX(0);
+}
+
+input#radio2:checked~.sliderContent .sliderImg {
+    transform: translateX(-100%);
+}
+
+input#radio3:checked~.sliderContent .sliderImg {
+    transform: translateX(-200%);
+}
+
+input#radio4:checked~.sliderContent .sliderImg {
+    transform: translateX(-300%);
+}
+
+input#radio1:checked~.sliderFooter>.sliderText .sliderTextContent {
+    transform: translateX(0);
+}
+
+input#radio2:checked~.sliderFooter>.sliderText .sliderTextContent {
+    transform: translateX(-100%);
+}
+
+input#radio3:checked~.sliderFooter>.sliderText .sliderTextContent {
+    transform: translateX(-200%);
+}
+
+input#radio4:checked~.sliderFooter>.sliderText .sliderTextContent {
+    transform: translateX(-300%);
+}
