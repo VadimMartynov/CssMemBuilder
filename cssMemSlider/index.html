@@ -7,14 +7,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        Доброго времени суток. Не было времени сделать задание вовремя. <br> 
-        Если возможно, то попрошу немного времени до дедлайна проверки. <br>
-        В обратном случае, ничего страшного, ведь делаем мы все это не для оценки, а для себя, так что работу сделаю в любом случае <br>
-        <h1>Для связи: https://t.me/Bail996</h1>
-        Мемы, которые будут в слайдере: <br>
-        <img src="images/1.jpg" width="600px" height="400px">
-        <img src="images/2.jpg" width="600px" height="400px">
-        <img src="images/3.jpg" width="600px" height="400px">
-        <img src="images/4.jpg" width="600px" height="400px">
+        <div class="content">
+            <div class="slider">
+                <input type="radio" id="radio1" name="slider" class="sliderRadio" checked>
+                <input type="radio" id="radio2" name="slider" class="sliderRadio">
+                <input type="radio" id="radio3" name="slider" class="sliderRadio">
+                <input type="radio" id="radio4" name="slider" class="sliderRadio">
+                <div class="sliderContent">
+                    <div class="sliderImg"><img src="images/1.jpg"></div>
+                    <div class="sliderImg"><img src="images/2.jpg"></div>
+                    <div class="sliderImg"><img src="images/3.jpg"></div>
+                    <div class="sliderImg"><img src="images/4.jpg"></div>
+                </div>
+                <div class="sliderFooter">
+                    <div class="sliderText">
+                        <div class="sliderTextContent">Toby the legend</div>
+                        <div class="sliderTextContent">Был бы ты человек</div>
+                        <div class="sliderTextContent">Кто позволил сбежать из дурки</div>
+                        <div class="sliderTextContent">Ну а как вы все хотели, в ловушке живем</div>
+                    </div>
+                    <div class="sliderControl">
+                        <label for="radio1" class="sliderControlElem"><div class="sliderButton"></div></label>
+                        <label for="radio2" class="sliderControlElem"><div class="sliderButton"></div></label>
+                        <label for="radio3" class="sliderControlElem"><div class="sliderButton"></div></label>
+                        <label for="radio4" class="sliderControlElem"><div class="sliderButton"></div></label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
